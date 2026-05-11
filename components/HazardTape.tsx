@@ -17,14 +17,14 @@ export function HazardTape({ text, speed = "normal", height = "h-9" }: Props) {
       aria-hidden
     >
       <div
-        className={`flex w-[200%] whitespace-nowrap ${speed === "slow" ? "tape-scroll-slow" : "tape-scroll"}`}
+        className={`flex w-max whitespace-nowrap ${speed === "slow" ? "tape-scroll-slow" : "tape-scroll"}`}
       >
         {[0, 1].map((dup) => (
-          <div key={dup} className="flex w-1/2 shrink-0 items-center">
+          <div key={dup} className="flex shrink-0 items-center">
             {items.map((i) => (
               <span
                 key={i}
-                className="font-display text-black uppercase tracking-tight px-6 text-[15px]"
+                className="font-display text-black uppercase tracking-tight px-6 text-[15px] shrink-0"
               >
                 {text}
                 <span className="px-3 text-black/60">★</span>

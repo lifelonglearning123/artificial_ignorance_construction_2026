@@ -34,13 +34,13 @@ export function Hero() {
           >
             We pay for your{" "}
             <span className="underline decoration-hazard decoration-[3px] underline-offset-2">
-              Google ads
+              leads
             </span>
             , answer every call{" "}
             <span className="underline decoration-hazard decoration-[3px] underline-offset-2">
               day and night
             </span>
-            , and put the jobs straight on your phone.
+            , and put the jobs straight into your calendar.
             <br />
             <span className="font-display uppercase text-hazard text-xl sm:text-2xl">
               You don&apos;t lift a finger.

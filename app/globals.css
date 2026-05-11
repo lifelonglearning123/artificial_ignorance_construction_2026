@@ -1,0 +1,269 @@
+@import "tailwindcss";
+
+:root {
+  --black: #0a0a0b;
+  --black-2: #16161a;
+  --black-3: #1f1f24;
+  --hazard: #ffe600;
+  --hazard-dim: #d9c200;
+  --green: #2fcb4f;
+  --green-deep: #1e9c39;
+  --bone: #f4f1ea;
+  --bone-2: #e7e1d3;
+  --rust: #b23a1b;
+  --steel: #6b6b73;
+}
+
+@theme inline {
+  --color-black: var(--black);
+  --color-black-2: var(--black-2);
+  --color-black-3: var(--black-3);
+  --color-hazard: var(--hazard);
+  --color-green: var(--green);
+  --color-bone: var(--bone);
+  --color-rust: var(--rust);
+  --color-steel: var(--steel);
+  --font-display: var(--font-archivo-black);
+  --font-sign: var(--font-big-shoulders);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+html,
+body {
+  background: var(--black);
+  color: var(--bone);
+  font-family: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--hazard);
+  color: var(--black);
+}
+
+/* Hazard tape — diagonal yellow/black stripes */
+.hazard-tape {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--hazard) 0 22px,
+    var(--black) 22px 44px
+  );
+}
+.hazard-tape-thin {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--hazard) 0 8px,
+    var(--black) 8px 16px
+  );
+}
+
+/* Blueprint grid — site-plan paper texture */
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(244, 241, 234, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 234, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.blueprint-grid-fine {
+  background-image:
+    linear-gradient(rgba(244, 241, 234, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 234, 0.06) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* Paper / receipt cream surface */
+.paper {
+  background: var(--bone);
+  color: var(--black);
+}
+.paper-rough {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(0, 0, 0, 0.04), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(0, 0, 0, 0.05), transparent 50%),
+    var(--bone);
+}
+
+/* Heavy chiseled border — site-sign aesthetic */
+.brutal-border {
+  border: 3px solid var(--black);
+  box-shadow:
+    6px 6px 0 0 var(--black),
+    6px 6px 0 3px var(--hazard);
+}
+.brutal-border-bone {
+  border: 3px solid var(--bone);
+  box-shadow:
+    6px 6px 0 0 var(--bone),
+    6px 6px 0 3px var(--hazard);
+}
+.brutal-border-green {
+  border: 3px solid var(--green);
+  box-shadow:
+    6px 6px 0 0 var(--green-deep);
+}
+
+/* Stamp seal effect */
+.stamp {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.stamp::before {
+  content: "";
+  position: absolute;
+  inset: -4% -2%;
+  border: 4px solid currentColor;
+  border-radius: 4px;
+  transform: rotate(-3deg);
+  opacity: 0.85;
+  pointer-events: none;
+}
+.stamp::after {
+  content: "";
+  position: absolute;
+  inset: 6% 4%;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  transform: rotate(-3deg);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Grain overlay */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' /%3E%3C/svg%3E");
+}
+
+/* Marquee — banner-style scrolling tape */
+@keyframes scroll-tape {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.tape-scroll {
+  animation: scroll-tape 28s linear infinite;
+}
+@keyframes scroll-tape-slow {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.tape-scroll-slow {
+  animation: scroll-tape-slow 60s linear infinite;
+}
+
+/* Pulse beacon — the 60s callback indicator */
+@keyframes beacon {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(47, 203, 79, 0.6); }
+  50% { box-shadow: 0 0 0 18px rgba(47, 203, 79, 0); }
+}
+.beacon { animation: beacon 1.6s ease-out infinite; }
+
+/* Stagger reveal on load */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+
+/* Count-up shimmer for big numbers */
+@keyframes shimmer {
+  0% { background-position: -200% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--hazard) 0%,
+    #ffffff 45%,
+    var(--hazard) 55%,
+    var(--hazard) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+/* Tilted ticket / receipt */
+.ticket-tilt-l { transform: rotate(-1.2deg); }
+.ticket-tilt-r { transform: rotate(1.4deg); }
+
+/* Inputs */
+.field {
+  width: 100%;
+  background: var(--bone);
+  color: var(--black);
+  border: 3px solid var(--black);
+  padding: 1rem 1.1rem;
+  font-family: var(--font-plex-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  outline: none;
+  transition: box-shadow 120ms ease;
+}
+.field:focus {
+  box-shadow: 0 0 0 4px var(--hazard);
+}
+.field::placeholder { color: var(--steel); font-weight: 500; }
+
+/* Big primary CTA — green stamp */
+.cta-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--green);
+  color: var(--black);
+  font-family: var(--font-archivo-black);
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 1.15rem 1.6rem;
+  border: 3px solid var(--black);
+  box-shadow: 6px 6px 0 0 var(--black);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  width: 100%;
+}
+.cta-primary:hover {
+  background: #38e05b;
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 0 var(--black);
+}
+.cta-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 0 var(--black);
+}
+
+.cta-hazard {
+  background: var(--hazard);
+  color: var(--black);
+  font-family: var(--font-archivo-black);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border: 3px solid var(--black);
+  box-shadow: 6px 6px 0 0 var(--black);
+  padding: 0.95rem 1.3rem;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.cta-hazard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 0 var(--black);
+}
+
+/* Hide scrollbar on marquees */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Display utility classes */
+.font-display { font-family: var(--font-archivo-black), Impact, sans-serif; }
+.font-sign { font-family: var(--font-big-shoulders), Impact, sans-serif; }
+.font-mono { font-family: var(--font-plex-mono), ui-monospace, monospace; }

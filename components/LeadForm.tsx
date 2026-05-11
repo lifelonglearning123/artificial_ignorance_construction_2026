@@ -60,7 +60,7 @@ export function LeadForm() {
       <div className="flex items-center gap-3 mb-2">
         <span className="size-3 rounded-full bg-green beacon" />
         <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-hazard">
-          Live · We Ring You In Under A Minute
+          Live · We Ring You In 10 Seconds
         </span>
       </div>
 
@@ -68,7 +68,7 @@ export function LeadForm() {
         Three boxes. One phone call. No tie-in.
       </h3>
       <p className="mt-3 text-bone/70 text-[15px] max-w-md">
-        We&apos;ll ring you back in less than a minute. The AI does the talking. You decide if you&apos;re in.
+        We&apos;ll ring you back in 10 seconds. The AI does the talking. You decide if you&apos;re in.
       </p>
 
       <div className="mt-6 grid grid-cols-1 gap-4">
@@ -184,12 +184,12 @@ function SuccessPanel() {
         Got it. Ringing your phone now.
       </h3>
       <p className="mt-3 text-black/75 max-w-md mx-auto">
-        Keep your phone in your hand — the AI is calling you in under a minute.
+        Keep your phone in your hand — the AI is calling you in 10 seconds.
         Pick up. Cut it off. Try and catch it out. This call IS the demo.
       </p>
       <div className="mt-6 inline-flex items-center gap-3 px-4 py-2 bg-black text-hazard font-mono text-[11px] uppercase tracking-[0.18em]">
         <span className="size-2 rounded-full bg-green beacon" />
-        Calling you back in about 42 seconds
+        Calling you back in 10 seconds
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ export function SignupSection() {
             </h2>
             <p className="mt-5 text-bone/80 text-lg max-w-md leading-snug">
               You scanned the banner because you&apos;re losing calls — and losing
-              jobs. Three boxes. One phone call. Sixty seconds. You&apos;ll know
+              jobs. Three boxes. One phone call. Ten seconds. You&apos;ll know
               if it works for your trade. No hard sell — the AI does the talking
               and either earns it or it doesn&apos;t.
             </p>

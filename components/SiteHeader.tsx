@@ -4,24 +4,17 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 bg-black/90 backdrop-blur border-b border-bone/15">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <div className="flex items-center gap-3">
-          <div className="relative h-9 w-9 shrink-0 bg-bone rounded-sm overflow-hidden grid place-items-center">
-            <Image
-              src="/logo.png"
-              alt="Artificial Ignorance"
-              width={36}
-              height={36}
-              className="object-contain p-0.5"
-              priority
-            />
-          </div>
-          <div className="leading-none">
-            <div className="font-display text-bone text-[15px] tracking-tight">
-              ARTIFICIAL IGNORANCE
-            </div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-hazard mt-0.5">
-              UK Construction · Stand Demo
-            </div>
+        <div className="flex items-center gap-4">
+          <Image
+            src="/logo.png"
+            alt="Artificial Ignorance"
+            width={462}
+            height={324}
+            className="h-28 w-auto object-contain"
+            priority
+          />
+          <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-hazard">
+            UK Construction · Stand Demo
           </div>
         </div>
         <a

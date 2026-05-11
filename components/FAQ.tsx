@@ -25,7 +25,7 @@ const items = [
   },
   {
     q: "Can I hear the AI before I sign up?",
-    a: "Yes — that IS the demo. Drop your number below. The AI rings you in under a minute. Cut it off. Ask it about your trade. Try and catch it out. That call IS the sales pitch.",
+    a: "Yes — that IS the demo. Drop your number below. The AI rings you in 10 seconds. Cut it off. Ask it about your trade. Try and catch it out. That call IS the sales pitch.",
   },
 ];
 

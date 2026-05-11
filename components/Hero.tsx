@@ -11,7 +11,7 @@ export function Hero() {
           <div className="flex items-center gap-3 mb-6 rise" style={{ animationDelay: "60ms" }}>
             <span className="inline-block size-3 rounded-full bg-green beacon" />
             <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-bone/70">
-              Live Demo · We Call You Back In Under A Minute
+              Live Demo · We Call You Back In 10 Seconds
             </span>
           </div>
 

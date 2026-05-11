@@ -7,7 +7,7 @@ export function CallbackPromise() {
     },
     {
       n: "02",
-      title: "Our AI rings you in a minute",
+      title: "Our AI rings you in 10 seconds",
       sub: "Pick up. Cut it off. Ask it anything. This IS the demo.",
     },
     {
@@ -31,7 +31,7 @@ export function CallbackPromise() {
               Three things happen
               <br />
               <span className="bg-black text-hazard px-2 inline-block">
-                in the next minute.
+                in the next 10 seconds.
               </span>
             </h2>
           </div>
@@ -62,7 +62,7 @@ export function CallbackPromise() {
                 <div className="mt-5 flex items-center gap-2 text-green-deep">
                   <span className="size-2.5 rounded-full bg-green beacon" />
                   <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-black">
-                    Most calls back in 42 seconds
+                    Most calls back in 10 seconds
                   </span>
                 </div>
               )}

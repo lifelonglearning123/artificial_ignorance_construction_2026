@@ -36,9 +36,9 @@ export function SignupSection() {
 
             <ul className="mt-7 space-y-3 max-w-md">
               {[
-                ["£1,000/mo", "Half the price of a PA, working three times the hours"],
+                ["£1,000/mo", "One-eighth the cost of a real team, working three times the hours"],
                 ["~£220k/mo", "Of work, if an average job is worth £10k"],
-                ["Week 1", "A job a day, every day — or that week is free"],
+                ["Month 1", "At least 10 real leads — or that month is free"],
               ].map(([k, v]) => (
                 <li key={k} className="flex items-baseline gap-4 border-b border-bone/15 pb-3">
                   <span className="font-sign font-black text-hazard text-2xl shrink-0 w-32">

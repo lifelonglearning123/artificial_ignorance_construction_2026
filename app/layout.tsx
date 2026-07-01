@@ -36,13 +36,13 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "A Job A Day For Tradesmen | Artificial Ignorance",
+  title: "10 Guaranteed Leads Month One | Artificial Ignorance",
   description:
-    "Half the price of a PA. We pay for the Google ads, answer every call day and night, and book the jobs. A real job a day from week one — or you don't pay.",
+    "One-eighth the cost of a real team. We pay for your Google ads, answer every call day and night, and book the jobs. At least 10 real leads in your first month — or that month is free.",
   openGraph: {
-    title: "A Job A Day. Starting Week One.",
+    title: "10 Leads. Month One. Guaranteed.",
     description:
-      "£1,000/mo. We pay for your ads, answer every call, book your jobs. Or you don't pay.",
+      "£1,000/mo. We pay for your ads, answer every call, book your jobs. 10 leads in month one — or that month is free.",
   },
 };
 

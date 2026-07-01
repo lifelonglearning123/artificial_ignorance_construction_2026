@@ -9,11 +9,11 @@ const items = [
   },
   {
     q: "How long am I tied in for?",
-    a: "You're not. It's month-by-month. Stop any time with 30 days' notice. And if we don't hit our 'one job a day' promise in a week, that week is free — we take it off your bill before you even ask.",
+    a: "You're not. It's month-by-month. Stop any time with 30 days' notice. And if we don't hit our '10 leads in your first month' promise, that month is free — we take it off your bill before you even ask.",
   },
   {
-    q: "When do the jobs start coming in?",
-    a: "Setup takes 2 to 4 working days. We sort out your Google ads, plug in your trades and postcodes, and teach the AI about your business. From day one of going live, the jobs start dropping. That's the promise.",
+    q: "When do the leads start coming in?",
+    a: "Setup takes 2 to 3 weeks depending on your digital readiness — how much of your Google Business Profile, website, and ad accounts are already in shape. We sort out your Google ads, plug in your trades and postcodes, and teach the AI about your business. Once we go live, you're guaranteed at least 10 real leads in your first month — or that month is on us.",
   },
   {
     q: "Will customers know they're talking to an AI?",

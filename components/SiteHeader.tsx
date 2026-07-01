@@ -14,7 +14,7 @@ export function SiteHeader() {
             priority
           />
           <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-hazard">
-            UK Construction · Stand Demo
+            UK Construction · Stand M59
           </div>
         </div>
         <a

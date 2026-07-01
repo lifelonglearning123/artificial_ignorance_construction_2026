@@ -3,7 +3,7 @@ import { HazardTape } from "./HazardTape";
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <HazardTape text="A Job A Day. Starting Week One." />
+      <HazardTape text="10 Guaranteed Leads. In Your First Month." />
 
       <div className="relative blueprint-grid bg-black">
         <div className="absolute inset-0 grain pointer-events-none" />
@@ -22,10 +22,10 @@ export function Hero() {
             Guaranteed
             <br />
             <span className="bg-hazard text-black px-2 inline-block -skew-x-3">
-              Daily Leads.
+              10 Leads.
             </span>
             <br />
-            Starting Week One.
+            In Month One.
           </h1>
 
           <p
@@ -67,7 +67,7 @@ export function Hero() {
             style={{ animationDelay: "480ms" }}
           >
             <Stat top="£1,000" sub="what we charge / month" />
-            <Stat top="£2,400" sub="a UK PA / month" struck />
+            <Stat top="£8,400" sub="a real team / month" struck />
             <Stat top="£220,000" sub="in jobs / month" highlight />
           </div>
         </div>

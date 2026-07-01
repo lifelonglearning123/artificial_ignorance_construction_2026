@@ -22,19 +22,29 @@ export function MathSection() {
           {/* Left: cost comparison */}
           <div className="lg:col-span-2 paper p-6 sm:p-8 brutal-border-bone ticket-tilt-l">
             <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-black/60">
-              Hiring A PA
+              Hiring The Team
             </div>
 
             <div className="mt-4 space-y-3">
-              <Row label="What a UK PA costs" value="£2,400 / mo" />
-              <Row label="Sick days" value="they take them" />
-              <Row label="Hours they work" value="9 to 5, Mon to Fri" />
-              <Row label="Calls after 5pm" value="all missed" muted />
+              <Row label="A UK PA" value="£2,400 / mo" />
+              <Row label="A marketing manager" value="£3,000 / mo" />
+              <Row label="A sales manager" value="£3,000 / mo" />
+            </div>
+
+            <div className="mt-5 pt-4 border-t-2 border-dashed border-black/30">
+              <div className="flex items-baseline justify-between">
+                <span className="font-display uppercase text-black text-base">Total / month</span>
+                <span className="font-sign font-black text-black text-3xl">£8,400</span>
+              </div>
+              <div className="mt-3 space-y-2">
+                <Row label="Sick days" value="they take them" muted />
+                <Row label="Calls after 5pm" value="all missed" muted />
+              </div>
             </div>
 
             <div className="mt-6 pt-4 border-t-2 border-dashed border-black/30">
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-black/60">
-                Us
+                Or Us — Does The Lot
               </div>
               <div className="mt-2 space-y-3">
                 <Row label="What we charge" value="£1,000 / mo" bold />
@@ -48,7 +58,7 @@ export function MathSection() {
             <div className="mt-4 flex items-baseline justify-between">
               <span className="font-display uppercase text-black text-xl">You save</span>
               <span className="font-sign font-black text-black text-4xl">
-                £1,400/mo
+                £7,400/mo
               </span>
             </div>
           </div>

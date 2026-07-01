@@ -17,13 +17,13 @@ export function Guarantee() {
                     The Artificial Ignorance
                   </div>
                   <div className="font-display uppercase text-rust text-4xl sm:text-5xl leading-none mt-2">
-                    A Job
+                    10 Leads
                   </div>
                   <div className="font-display uppercase text-rust text-4xl sm:text-5xl leading-none">
-                    A Day
+                    Month One
                   </div>
                   <div className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-rust">
-                    No Job · No Pay
+                    No Leads · No Pay
                   </div>
                 </div>
               </div>
@@ -39,16 +39,19 @@ export function Guarantee() {
               ↳ Skin In The Game
             </div>
             <h2 className="font-display uppercase text-black text-[clamp(2rem,6.5vw,4.6rem)] leading-[0.9] tracking-tight">
-              A job a day from week one.
+              10 real leads in your first month.
               <br />
               <span className="bg-black text-hazard px-2 inline-block">
-                Or that week is free.
+                Or that month is free.
               </span>
             </h2>
             <p className="mt-6 text-black/80 text-lg max-w-xl leading-snug">
-              We&apos;ve put it in writing. If we don&apos;t put a real job on your
-              phone every working day of the week,{" "}
-              <strong className="text-black">that whole week is on us</strong>.
+              We&apos;ve put it in writing. Setup takes 2 to 3 weeks depending
+              on how much of your digital setup is already in place. Once
+              we&apos;re live, if we don&apos;t put{" "}
+              <strong className="text-black">at least 10 real leads</strong>{" "}
+              on your phone in your first month,{" "}
+              <strong className="text-black">that whole month is on us</strong>.
               No arguing. No &quot;but Google changed&quot;. No small print.
             </p>
             <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl">

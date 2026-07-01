@@ -13,7 +13,7 @@ export function CallbackPromise() {
     {
       n: "03",
       title: "You sign up or you walk",
-      sub: "Like it? We set you up there and then. Don't? We don't ring you again.",
+      sub: "Like it? Or would you rather keep the admin headaches instead of growing your business quickly?",
     },
   ];
 
@@ -34,9 +34,6 @@ export function CallbackPromise() {
                 in the next 10 seconds.
               </span>
             </h2>
-          </div>
-          <div className="font-mono text-[12px] uppercase tracking-[0.16em] text-black/60 max-w-xs">
-            ↳ You scanned the banner. So we&apos;ll show you it works — right now, on your phone — before you pay a penny.
           </div>
         </div>
 
@@ -62,7 +59,7 @@ export function CallbackPromise() {
                 <div className="mt-5 flex items-center gap-2 text-green-deep">
                   <span className="size-2.5 rounded-full bg-green beacon" />
                   <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-black">
-                    Most calls back in 10 seconds
+                    Much more efficient than an employee
                   </span>
                 </div>
               )}

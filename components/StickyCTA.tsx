@@ -24,7 +24,7 @@ export function StickyCTA() {
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-3">
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-hazard">
-              ↳ A job a day, every day
+              ↳ 10 leads month one, guaranteed
             </span>
             <span className="font-display uppercase text-bone text-sm">
               £1,000/mo · Stop any time

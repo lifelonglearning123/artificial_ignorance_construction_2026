@@ -17,10 +17,10 @@ export function Guarantee() {
                     The Artificial Ignorance
                   </div>
                   <div className="font-display uppercase text-rust text-4xl sm:text-5xl leading-none mt-2">
-                    10 Leads
+                    A Lead
                   </div>
                   <div className="font-display uppercase text-rust text-4xl sm:text-5xl leading-none">
-                    Month One
+                    A Day
                   </div>
                   <div className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-rust">
                     No Leads · No Pay
@@ -39,7 +39,7 @@ export function Guarantee() {
               ↳ Skin In The Game
             </div>
             <h2 className="font-display uppercase text-black text-[clamp(2rem,6.5vw,4.6rem)] leading-[0.9] tracking-tight">
-              10 real leads in your first month.
+              A lead a day, once we&apos;re live.
               <br />
               <span className="bg-black text-hazard px-2 inline-block">
                 Or that month is free.
@@ -47,10 +47,11 @@ export function Guarantee() {
             </h2>
             <p className="mt-6 text-black/80 text-lg max-w-xl leading-snug">
               We&apos;ve put it in writing. Setup takes 2 to 3 weeks depending
-              on how much of your digital setup is already in place. Once
-              we&apos;re live, if we don&apos;t put{" "}
+              on your digital readiness. From the day we go live, it&apos;s{" "}
+              <strong className="text-black">a lead a day, working days</strong>.
+              And if you don&apos;t hit{" "}
               <strong className="text-black">at least 10 real leads</strong>{" "}
-              on your phone in your first month,{" "}
+              in your first month live,{" "}
               <strong className="text-black">that whole month is on us</strong>.
               No arguing. No &quot;but Google changed&quot;. No small print.
             </p>

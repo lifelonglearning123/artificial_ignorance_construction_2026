@@ -3,7 +3,7 @@ import { HazardTape } from "./HazardTape";
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <HazardTape text="10 Guaranteed Leads. In Your First Month." />
+      <HazardTape text="A Lead A Day. From The Day We Go Live." />
 
       <div className="relative blueprint-grid bg-black">
         <div className="absolute inset-0 grain pointer-events-none" />
@@ -22,10 +22,10 @@ export function Hero() {
             Guaranteed
             <br />
             <span className="bg-hazard text-black px-2 inline-block -skew-x-3">
-              10 Leads.
+              Daily Leads.
             </span>
             <br />
-            In Month One.
+            From Day One Live.
           </h1>
 
           <p
